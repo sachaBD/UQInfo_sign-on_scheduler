@@ -1,0 +1,18 @@
+Overview of this tool:
+
+Structure:
+Programs: Dict[str, Program]    -> Top level contains mapping of program names (eg. Engineering (Honours) to their
+                                Program object.
+Program:                        -> Contains information on all "plans" (often called Majors) within a program. Unless
+                                otherwise specified in Config.py students are assumed to be enrolled in exactly 1 plan.
+Course:                         -> Contains information on a course. This must include: course code, units, name and
+                                offered semesters.
+
+
+Assumptions:
+    - All students are enrolled in exactly 1 plan (major).
+    - All students are in undergraduate or honours courses.
+    - All programs are correctly displayed via their links from:
+
+
+
