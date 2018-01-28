@@ -154,6 +154,9 @@ class UQCourseScraper:
                     # plans[name].add(Course(buildCourse[0], buildCourse[2], int(buildCourse[1]), baseURL + link))
                 except ValueError as e:
                     print("Skipping: " + str(buildCourse) + ", " + str(link))
+                except IndexError as e:
+                    print("Skipping: " + str(buildCourse) + ", " + str(link))
+
 
         # Testing
         testing = False
